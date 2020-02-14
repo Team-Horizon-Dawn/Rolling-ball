@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 	   if(other.gameObject.CompareTag("Pick Up")) {
-		   other.gameObject.SetActive(false);
 		   switch (ColorUtility.ToHtmlStringRGB(other.gameObject.GetComponent<Renderer>().material.color))
 		   {
 			   case "0000FF":
@@ -29,6 +28,8 @@ public class PlayerController : MonoBehaviour {
 				   level.GetComponent<GroundRotator>().speed *= 1.5f;
 				   break;
 		   }
+		   other.gameObject.SetActive(false);
+		   
 	   }
    }
 }
