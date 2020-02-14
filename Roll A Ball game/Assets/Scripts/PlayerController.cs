@@ -6,15 +6,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	private Rigidbody rb;
-	private GameObject level;
+	public GameObject level;
 	
 	void Start () {
 		rb = GetComponent<Rigidbody>();
-		level = GameObject.Find("level");
 	}
 
 	void OnTriggerEnter(Collider other) {
-		print(other.gameObject.tag);
 	   if(other.gameObject.CompareTag("Pick Up"))
 	   {
 		   switch (ColorUtility.ToHtmlStringRGB(other.gameObject.GetComponent<Renderer>().material.color))

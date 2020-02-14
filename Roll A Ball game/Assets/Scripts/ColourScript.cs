@@ -15,7 +15,6 @@ public class ColourScript : MonoBehaviour
     {
         Color color = Color.red;
         float colourRandom = Random.Range(1, 4);
-        print(colourRandom);
         switch(colourRandom)
         {
             case 1:
