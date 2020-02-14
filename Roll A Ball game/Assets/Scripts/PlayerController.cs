@@ -14,7 +14,9 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-	   if(other.gameObject.CompareTag("Pick Up")) {
+		print(other.gameObject.tag);
+	   if(other.gameObject.CompareTag("Pick Up"))
+	   {
 		   switch (ColorUtility.ToHtmlStringRGB(other.gameObject.GetComponent<Renderer>().material.color))
 		   {
 			   case "0000FF":

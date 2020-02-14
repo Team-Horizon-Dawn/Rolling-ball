@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8120431990499977514}
   - component: {fileID: 8120431990499977515}
   - component: {fileID: 8120431990499977516}
+  - component: {fileID: 114761481084109720}
   - component: {fileID: 8120431990499977517}
   - component: {fileID: 6202215196747729288}
-  - component: {fileID: 114761481084109720}
   m_Layer: 0
   m_Name: Pick Up
   m_TagString: Pick Up
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a177eada4719fd4ebc07f6ab8f748e0, type: 2}
+  - {fileID: 2100000, guid: c5533cc3eca786f4b88aa8b3881c7c73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,6 +94,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114761481084109720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120431990499977518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb2b966d30a2844a841a11820266fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8120431990499977517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,15 +134,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114761481084109720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120431990499977518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb2b966d30a2844a841a11820266fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
